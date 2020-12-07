@@ -1,0 +1,46 @@
+body{
+	
+	
+	color:white;
+	background-color:grey
+
+}
+
+#container{
+	width:600px;
+	height:600px;
+
+}
+#duck{
+	width:130px;
+
+}
+#eend{
+	position:relative;
+	left:600px;
+	top:300px;
+	width:100px;
+	size:100px;
+
+}
+
+#achtergrond{
+	width:1500px;
+}
+
+#achtergrondtot{
+	
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-10;
+}
+
+button{
+	background:transparent;
+	border:transparent;
+
+}
+button:hover{
+	background-color:red;
+}
