@@ -19,42 +19,52 @@ setInterval(richtingcompleet,500)
 function richtingcompleet(random){
 	
 	var random = richting[Math.floor(Math.random()*8)];
-
 		
-
-		if(random == 'w'){
+			switch(random){
+			case "w":
 			var links=parseInt(eend.style.left, 10)-movement;
 			eend.style.left=links+'px';
-		}else if(random == 'o'){
+			break;
+			case "o":
 			var rechts=parseInt(eend.style.left, 10)+movement;
 			eend.style.left=rechts+'px'
-		}else if(random == 'n'){
+			break;
+			case "z":
 			var boven=parseInt(eend.style.top, 10)-movement;
 			eend.style.top=boven+'px'
-		}else if(random == 'z'){
+			break;
+			case "n":
 			var beneden=parseInt(eend.style.top, 10)+movement;
 			eend.style.top=beneden+'px'
-		}else if(random == 'no'){
+			break;
+			case "no":
 			var rechtsboven1=parseInt(eend.style.left, 10)+movement;
 			eend.style.left=rechtsboven1+'px'
 			var rechtsboven2=parseInt(eend.style.top, 10)-movement;
 			eend.style.top=rechtsboven2+'px'
-		}else if(random == 'zo'){
+			break;
+			case "zo":
 			var rechtsonder1=parseInt(eend.style.left, 10)+movement;
 			eend.style.left=rechtsonder1+'px'
 			var rechtsonder2=parseInt(eend.style.top, 10)+movement;
 			eend.style.top=rechtsonder2+'px'
-		}else if(random == 'zw'){
+			break;
+			case "zw":
 			var linksonder1=parseInt(eend.style.left, 10)-movement;
 			eend.style.left=linksonder1+'px'
 			var linksonder2=parseInt(eend.style.top, 10)+movement;
 			eend.style.top=linksonder2+'px'
-		}else if(random == 'nw'){
+			break;
+			case "nw":
 			var linksboven1=parseInt(eend.style.left, 10)-movement;
 			eend.style.left=linksboven1+'px'
 			var linksboven2=parseInt(eend.style.top, 10)-movement;
 			eend.style.top=linksboven2+'px'
-		}
+			}
+		
+		
+
+		
 	
 }
 	
@@ -98,4 +108,5 @@ function centreerEend(object){
 	eend.style.top = eendboven+'px';
 	eend.style.left = eendzijden+'px';
 }
+
 
